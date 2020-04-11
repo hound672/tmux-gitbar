@@ -17,4 +17,4 @@ if-shell '! stat ${TMUX_GITBAR_CONF}' \
 
 # install update-gitbar as a prompt command if not done already
 if-shell 'echo $PROMPT_COMMAND | grep -qv update-gitbar' \
-  'PROMPT_COMMAND="$TMUX_GITBAR_DIR/update-gitbar; $PROMPT_COMMAND"'
+  'PROMPT_COMMAND="$TMUX_GITBAR_DIR/update-gitbar $PROMPT_COMMAND"'
